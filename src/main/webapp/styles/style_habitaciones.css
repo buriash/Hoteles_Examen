@@ -1,0 +1,60 @@
+
+main {
+    background-color: var(--fondoOscuro);
+    padding: 10px;
+    min-height: calc(100vh - 150px - 48px - 60px - 80px);
+    color: #eaeaea; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lista-habitaciones h2 {
+    color: var(--colorContraste);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.habitaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.habitacion-card {
+    background-color: var(--fondoClaro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: var(--texto);
+    transition: transform 0.3s ease;
+}
+
+.habitacion-card:hover {
+    transform: scale(1.05);
+}
+
+.habitacion-foto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.habitacion-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.habitacion-info h3 {
+    margin-bottom: 10px;
+    color: var(--colorContrasteOscuro);
+}
+
+.habitacion-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
