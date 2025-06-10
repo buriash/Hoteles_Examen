@@ -35,7 +35,7 @@ if (request.getAttribute(I_Constantes.ATR_LISTA_HABITACIONES) != null) {
             <% for (Habitacion hab : listaHabitacion) { %>
                 <article class="habitacion-card">
                     <div class="habitacion-foto">
-                        <img src="imagenes/hab<%= hab.getIdHabitacion()%>.jpg" alt="Habitación <%= hab.getNumeroHabitacion() %>" />
+                        <img src="imagenes/hab3.jpg" alt="Habitación <%= hab.getNumeroHabitacion() %>" />
                     </div>
                     <div class="habitacion-info">
                         <h3>Habitación Nº <%= hab.getNumeroHabitacion() %></h3>
